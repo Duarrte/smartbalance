@@ -1,17 +1,7 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
-
-
-  const isLinkActive = (path: string) => location.pathname === path;
-
-
-  const handleLinkClick = () => {
-      setIsMobileMenuOpen(false);
-  };
+  
 
   return (
     <header className="bg-white shadow-sm border-b-2 border-blue-100 px-6 py-3 sticky top-0 z-10">
